@@ -231,8 +231,27 @@ footer{
 }
 
 @media (max-width: 670px) {
+    #intro h1{
+        line-height: 1.2em;
+    }
+
     .navi li{
         margin-bottom: 10px;
+    }
+
+    .biodata h2{
+        text-align: center;
+    }
+
+    .container li{
+        flex: auto;
+        width: 100%;
+    }
+    
+    .container p{
+        font-size: 14px;
+        text-align: center;
+        line-height:1.75em;
     }
 
     aside{
@@ -263,5 +282,4 @@ footer{
     .konek{
         margin-bottom: 200px;
     }
-
 }
