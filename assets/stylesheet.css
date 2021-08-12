@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    scroll-behavior: smooth;
+    
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    color: white;
+    background-color: #23272a;
+}
+
+main{
+    overflow: auto;
+}
+
+aside{
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+li{
+    margin-right:70px;
+    
+    float:left;
+    
+    list-style-type: none;
+}
+
+#nav {
+    background: #5865F2;
+    width: 98.75vw;
+}
+
+#intro {
+    margin-top: 30px;
+    
+    background: #23272a;
+}
+
+#intro h1{
+    font-size:54px;
+}
+
+#nav::after {
+    content: "";
+  
+    position: relative;
+    left: -3.5rem;
+    
+    float: left;
+    display: block;
+  
+    height: 4rem;
+    width: 98.75vw;
+    
+    background: hsla(0, 0%, 100%, 0.5);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: %2323272a;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: %235865F2;'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 100% 100%;
+}
+  
+#nav, #intro, .biodata, .konek {
+    padding: 3.5rem;
+}
+
+.navi{
+    margin-bottom: 50px;
+}
+
+.navi a:link, .navi a:active, .navi a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navi a:hover{
+    padding: 7.5px;
+    text-decoration: none;
+    border-radius: 100px;
+
+    display: block;
+    
+    color: 	white;
+    background-color: #717ae4;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+.container li{
+    flex: auto;
+    width: 45%;
+}
+
+.container p{
+    text-align: center;
+    line-height:1.75em;
+}
+
+.box{
+    margin: 20px;
+    padding: 40px 0;
+    width: auto;
+    height: 300px;
+
+    border: 1.5px solid #2c2f33;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 #2c2f33;
+    
+    background-color: #2c2f33;
+}
+
+.box img{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    
+    border: 5px solid #2c2f33;
+    border-radius: 100px;
+}
+
+.box p{
+    text-align:center;
+}
+
+.txt{
+    margin-top: 25px;
+}
+
+.konek{
+    display: flex;
+}
+
+.konek h2{
+    margin-right: 25px;
+}
+
+.konek li:active{
+    position: relative;
+    top: 3px;
+}
+
+.dropbtn,  .dropbtn-twit, .dropbtn-insta{
+    display: inline;
+    background-color: #2c2f33;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    color: white;
+}
+  
+.dropdown, .dropdown-twit, .dropdown-insta{
+    position: relative;
+    display: inline-block;
+}
+  
+.facebutt,  .twitbutt, .instabutt {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    z-index: 1;
+}
+  
+.facebutt a, .twitbutt a, .instabutt a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.facebutt a:hover, .twitbutt a:hover, .instabutt a:hover {
+    background-color: #2c2f33;
+    border-radius: 100px;
+}
+  
+.dropdown:hover .facebutt, .dropdown-twit:hover .twitbutt, .dropdown-insta:hover .instabutt {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn, .dropdown-twit:hover .dropbtn-twit, .dropdown-insta:hover .dropbtn-insta {
+    background-color: #23272a;
+}
+
+footer{
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 15px;
+    background-color: #5865F2;
+}
+
+@keyframes ani {
+    0%   {left:0px}
+    25%  {left:25px}
+    100% {left:0px}
+}
+  
+.box{
+    position: relative;
+    animation-name: ani;
+    animation-duration: 3s;
+}
+
+.davi{
+    animation-delay: 0.5s;
+}
+
+.irpan{
+    animation-delay: 1.0s;
+}
+
+.hanip{
+    animation-delay: 1.5s;
+}
+
+.rifqi{
+    animation-delay: 2.0s;
+}
+
+@media (max-width: 670px) {
+    aside{
+        margin-bottom: 300px;
+    }
+
+    .konek{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .konek li{
+        flex: auto;
+        width: 100%;
+    }
+
+    .konek a:hover{
+        display: flex;
+    }
+
+    .facebutt,  .twitbutt, .instabutt {
+        display: none;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+    }
+
+    .konek{
+        margin-bottom: 200px;
+    }
+
+}
