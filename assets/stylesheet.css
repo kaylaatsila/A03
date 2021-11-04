@@ -249,6 +249,10 @@ footer{
     animation-delay: 2.0s;
 }
 
+.naufal{
+    animation-delay: 2.5s;
+}
+
 @media (max-width: 670px) {
     #intro h1{
         line-height: 1.2em;
