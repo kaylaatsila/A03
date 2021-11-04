@@ -207,6 +207,21 @@ footer{
 }
 
 @keyframes ani {
+    0% {
+        transform: rotateY(0);
+    }
+    
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.box{
+    position: relative;
+    animation: ani 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) alternate-reverse forwards;
+}
+
+/* @keyframes ani {
     0%   {left:0px}
     25%  {left:25px}
     100% {left:0px}
@@ -216,7 +231,7 @@ footer{
     position: relative;
     animation-name: ani;
     animation-duration: 3.5s;
-}
+} */
 
 .davi{
     animation-delay: 0.5s;
